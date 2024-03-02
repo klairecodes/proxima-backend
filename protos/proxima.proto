@@ -1,10 +1,9 @@
-syntax = "proto3"
+syntax = "proto3";
 
 package proxima;
 
-import "google/protobuf/timestamp.proto"
-import "google/protobuf/lat_lng.proto"
-//import "../googleapis/google/maps/routes/"
+import "google/protobuf/timestamp.proto";
+import "googleapis/google/type/latlng.proto";
 
 
 message User {
@@ -16,18 +15,20 @@ message User {
   string secret = 6; // password
 
   enum Visibility {
-    default USER_VISIBLE = 0;
+    USER_VISIBLE = 0;
     USER_INVISIBLE = 1;
     USER_FRIENDS_ONLY = 2;
   }
 
-  optional repeated User friends = 7;
-  optional repeated User blocked = 8;
+  Visibility status = 7;
 
-  google.protobuf.Timestamp create_time = 9;
-  google.protobuf.Timestamp update_time = 10;
+  repeated User friends = 8;
+  repeated User blocked = 9;
 
-  repeated Ping orbit = 11; // current pings that have hit you
+  google.protobuf.Timestamp create_time = 10;
+  google.protobuf.Timestamp update_time = 11;
+
+  repeated Ping orbit = 12; // current pings that have hit you
 
 }
 
@@ -35,7 +36,7 @@ message Ping {
   int32 uid = 1;
   User owner = 2;
 
-  google.type.lat_lng = 3;
+  google.type.LatLng latlng = 3;
   repeated string tags = 4;
   string description = 5;
   repeated User orbit = 6;

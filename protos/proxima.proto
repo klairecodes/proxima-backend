@@ -1,0 +1,43 @@
+syntax = "proto3"
+
+package proxima;
+
+import "google/protobuf/timestamp.proto"
+
+
+message User {
+  int32 uid = 1;
+  string name = 2;
+  string email = 3;
+  string username = 4;
+  string pronouns = 5;
+  string secret = 6; // password
+
+  enum Visibility {
+    default USER_VISIBLE = 0;
+    USER_INVISIBLE = 1;
+    USER_FRIENDS_ONLY = 2;
+  }
+
+  optional repeated User friends = 7;
+  optional repeated User blocked = 8;
+
+  google.protobuf.Timestamp create_time = 9;
+  google.protobuf.Timestamp update_time = 10;
+
+  repeated Ping orbit = 11; // current pings that have hit you
+
+}
+
+message Ping {
+  int32 uid = 1;
+  User owner = 2;
+
+  string location = 3;
+  repeated string tags = 4;
+  string description = 5;
+  repeated User orbit = 6;
+  repeated User hit = 7; // users who have been hit by the ping
+}
+
+

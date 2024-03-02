@@ -3,6 +3,8 @@ syntax = "proto3"
 package proxima;
 
 import "google/protobuf/timestamp.proto"
+import "google/protobuf/lat_lng.proto"
+//import "../googleapis/google/maps/routes/"
 
 
 message User {
@@ -33,7 +35,7 @@ message Ping {
   int32 uid = 1;
   User owner = 2;
 
-  string location = 3;
+  google.type.lat_lng = 3;
   repeated string tags = 4;
   string description = 5;
   repeated User orbit = 6;

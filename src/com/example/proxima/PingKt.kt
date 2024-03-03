@@ -3,11 +3,11 @@
 
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package proxima;
+package com.example.proxima;
 
 @kotlin.jvm.JvmName("-initializeping")
-public inline fun ping(block: proxima.PingKt.Dsl.() -> kotlin.Unit): proxima.Proxima.Ping =
-  proxima.PingKt.Dsl._create(proxima.Proxima.Ping.newBuilder()).apply { block() }._build()
+public inline fun ping(block: com.example.proxima.PingKt.Dsl.() -> kotlin.Unit): com.example.proxima.Ping =
+  com.example.proxima.PingKt.Dsl._create(com.example.proxima.Ping.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `proxima.Ping`
  */
@@ -15,17 +15,17 @@ public object PingKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: proxima.Proxima.Ping.Builder
+    private val _builder: com.example.proxima.Ping.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
       @kotlin.PublishedApi
-      internal fun _create(builder: proxima.Proxima.Ping.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.example.proxima.Ping.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-    internal fun _build(): proxima.Proxima.Ping = _builder.build()
+    internal fun _build(): com.example.proxima.Ping = _builder.build()
 
     /**
      * `int32 uid = 1;`
@@ -47,7 +47,7 @@ public object PingKt {
     /**
      * `.proxima.User owner = 2;`
      */
-    public var owner: proxima.Proxima.User
+    public var owner: com.example.proxima.User
       @JvmName("getOwner")
       get() = _builder.getOwner()
       @JvmName("setOwner")
@@ -188,7 +188,7 @@ public object PingKt {
     /**
      * `repeated .proxima.User orbit = 6;`
      */
-     public val orbit: com.google.protobuf.kotlin.DslList<proxima.Proxima.User, OrbitProxy>
+     public val orbit: com.google.protobuf.kotlin.DslList<com.example.proxima.User, OrbitProxy>
       @kotlin.jvm.JvmSynthetic
       get() = com.google.protobuf.kotlin.DslList(
         _builder.getOrbitList()
@@ -199,7 +199,7 @@ public object PingKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("addOrbit")
-    public fun com.google.protobuf.kotlin.DslList<proxima.Proxima.User, OrbitProxy>.add(value: proxima.Proxima.User) {
+    public fun com.google.protobuf.kotlin.DslList<com.example.proxima.User, OrbitProxy>.add(value: com.example.proxima.User) {
       _builder.addOrbit(value)
     }
     /**
@@ -209,7 +209,7 @@ public object PingKt {
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("plusAssignOrbit")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<proxima.Proxima.User, OrbitProxy>.plusAssign(value: proxima.Proxima.User) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.example.proxima.User, OrbitProxy>.plusAssign(value: com.example.proxima.User) {
       add(value)
     }
     /**
@@ -218,7 +218,7 @@ public object PingKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("addAllOrbit")
-    public fun com.google.protobuf.kotlin.DslList<proxima.Proxima.User, OrbitProxy>.addAll(values: kotlin.collections.Iterable<proxima.Proxima.User>) {
+    public fun com.google.protobuf.kotlin.DslList<com.example.proxima.User, OrbitProxy>.addAll(values: kotlin.collections.Iterable<com.example.proxima.User>) {
       _builder.addAllOrbit(values)
     }
     /**
@@ -228,7 +228,7 @@ public object PingKt {
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("plusAssignAllOrbit")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<proxima.Proxima.User, OrbitProxy>.plusAssign(values: kotlin.collections.Iterable<proxima.Proxima.User>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.example.proxima.User, OrbitProxy>.plusAssign(values: kotlin.collections.Iterable<com.example.proxima.User>) {
       addAll(values)
     }
     /**
@@ -238,7 +238,7 @@ public object PingKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("setOrbit")
-    public operator fun com.google.protobuf.kotlin.DslList<proxima.Proxima.User, OrbitProxy>.set(index: kotlin.Int, value: proxima.Proxima.User) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.example.proxima.User, OrbitProxy>.set(index: kotlin.Int, value: com.example.proxima.User) {
       _builder.setOrbit(index, value)
     }
     /**
@@ -246,7 +246,7 @@ public object PingKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("clearOrbit")
-    public fun com.google.protobuf.kotlin.DslList<proxima.Proxima.User, OrbitProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.example.proxima.User, OrbitProxy>.clear() {
       _builder.clearOrbit()
     }
 
@@ -264,7 +264,7 @@ public object PingKt {
      *
      * `repeated .proxima.User hit = 7;`
      */
-     public val hit: com.google.protobuf.kotlin.DslList<proxima.Proxima.User, HitProxy>
+     public val hit: com.google.protobuf.kotlin.DslList<com.example.proxima.User, HitProxy>
       @kotlin.jvm.JvmSynthetic
       get() = com.google.protobuf.kotlin.DslList(
         _builder.getHitList()
@@ -279,7 +279,7 @@ public object PingKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("addHit")
-    public fun com.google.protobuf.kotlin.DslList<proxima.Proxima.User, HitProxy>.add(value: proxima.Proxima.User) {
+    public fun com.google.protobuf.kotlin.DslList<com.example.proxima.User, HitProxy>.add(value: com.example.proxima.User) {
       _builder.addHit(value)
     }
     /**
@@ -293,7 +293,7 @@ public object PingKt {
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("plusAssignHit")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<proxima.Proxima.User, HitProxy>.plusAssign(value: proxima.Proxima.User) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.example.proxima.User, HitProxy>.plusAssign(value: com.example.proxima.User) {
       add(value)
     }
     /**
@@ -306,7 +306,7 @@ public object PingKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("addAllHit")
-    public fun com.google.protobuf.kotlin.DslList<proxima.Proxima.User, HitProxy>.addAll(values: kotlin.collections.Iterable<proxima.Proxima.User>) {
+    public fun com.google.protobuf.kotlin.DslList<com.example.proxima.User, HitProxy>.addAll(values: kotlin.collections.Iterable<com.example.proxima.User>) {
       _builder.addAllHit(values)
     }
     /**
@@ -320,7 +320,7 @@ public object PingKt {
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("plusAssignAllHit")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<proxima.Proxima.User, HitProxy>.plusAssign(values: kotlin.collections.Iterable<proxima.Proxima.User>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.example.proxima.User, HitProxy>.plusAssign(values: kotlin.collections.Iterable<com.example.proxima.User>) {
       addAll(values)
     }
     /**
@@ -334,7 +334,7 @@ public object PingKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("setHit")
-    public operator fun com.google.protobuf.kotlin.DslList<proxima.Proxima.User, HitProxy>.set(index: kotlin.Int, value: proxima.Proxima.User) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.example.proxima.User, HitProxy>.set(index: kotlin.Int, value: com.example.proxima.User) {
       _builder.setHit(index, value)
     }
     /**
@@ -346,19 +346,19 @@ public object PingKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("clearHit")
-    public fun com.google.protobuf.kotlin.DslList<proxima.Proxima.User, HitProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.example.proxima.User, HitProxy>.clear() {
       _builder.clearHit()
     }
 
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun proxima.Proxima.Ping.copy(block: `proxima`.PingKt.Dsl.() -> kotlin.Unit): proxima.Proxima.Ping =
-  `proxima`.PingKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.example.proxima.Ping.copy(block: `com.example.proxima`.PingKt.Dsl.() -> kotlin.Unit): com.example.proxima.Ping =
+  `com.example.proxima`.PingKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val proxima.Proxima.PingOrBuilder.ownerOrNull: proxima.Proxima.User?
+public val com.example.proxima.PingOrBuilder.ownerOrNull: com.example.proxima.User?
   get() = if (hasOwner()) getOwner() else null
 
-public val proxima.Proxima.PingOrBuilder.latlngOrNull: com.google.type.LatLng?
+public val com.example.proxima.PingOrBuilder.latlngOrNull: com.google.type.LatLng?
   get() = if (hasLatlng()) getLatlng() else null
 

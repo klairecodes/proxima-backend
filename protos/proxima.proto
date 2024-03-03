@@ -5,6 +5,14 @@ package proxima;
 import "google/protobuf/timestamp.proto";
 import "googleapis/google/type/latlng.proto";
 
+service Account {
+  // Gets a user by their username
+  rpc GetUser (UserRequest) returns (User) {}
+}
+
+message UserRequest {
+  string username = 1;
+}
 
 message User {
   int32 uid = 1;
@@ -31,6 +39,11 @@ message User {
   repeated Ping orbit = 12; // current pings that have hit you
 
 }
+
+//service PingSend {
+  //// Sends a ping to a user
+  //rpc PingSend 
+//}
 
 message Ping {
   int32 uid = 1;
